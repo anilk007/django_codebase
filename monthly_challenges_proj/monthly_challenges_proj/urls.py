@@ -7,5 +7,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # you can dynamically change below path here
+    # automatically it will be change every where
     path('challenge/', include("challenges_app.urls"))
 ]
